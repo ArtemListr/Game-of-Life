@@ -13,8 +13,8 @@ public class Window implements Runnable{
     void initFrame(){
         frame = new JFrame();
         frame.getContentPane().setLayout(null);
-        frame.setSize(300,200);
-        frame.getDefaultCloseOperation();
+        frame.setSize(Config.WIDTH*Config.SIZE, Config.HEIGHT*Config.SIZE);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
         frame.setTitle("Game of Life");
 
